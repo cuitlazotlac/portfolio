@@ -6,12 +6,12 @@ const Dropdown = ({ isOpen, toggle }) => {
     <div
       className={
         isOpen
-          ? "grid grid-rows-4 text-center items-center bg-yellow-500"
+          ? "grid grid-rows-2 text-center items-center bg-yellow-500"
           : "hidden"
       }
       onClick={toggle}
     >
-      <Link className="p-4" to="/"></Link>
+      {/* <Link className="p-4" to="/"></Link> */}
       <Link className="p-4" to="/Work">
         Work
       </Link>
