@@ -25,9 +25,9 @@ const Navbar = ({toogle}) => {
       </div>
       <div className="pr-8 md:block hidden">
           <Link className="p-4" to="/"></Link>
-          <Link className="p-4" to="/menu">Menu</Link>
-          <Link className="p-4" to="/about">About</Link>
-          <Link className="p-4" to="/contact">Contact</Link>
+          <Link className="p-4" to="/Work">Work</Link>
+          <Link className="p-4" to="/Resume">Resume</Link>
+          <Link className="p-4" to="/About">About+Connect</Link>
       </div>
     </nav>
   );

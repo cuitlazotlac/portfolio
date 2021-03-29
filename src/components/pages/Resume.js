@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Menu = () => {
+const Resume = () => {
     return (
         <div className="h-screen flex justify-center items-center bg-green-300">
-            <h1 className="text-9xl uppercase font-black">Menu Page</h1>
+            <h1 className="text-9xl uppercase font-black">Resume Page</h1>
         </div>
     )
 }
 
-export default Menu
+export default Work

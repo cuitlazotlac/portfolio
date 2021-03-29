@@ -1,18 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Dropdown = ({isOpen, toggle}) => {
+const Dropdown = ({ isOpen, toggle }) => {
   return (
-    <div className={isOpen ? 'grid grid-rows-4 text-center items-center bg-yellow-500' : 'hidden'} onClick={toggle}>
+    <div
+      className={
+        isOpen
+          ? "grid grid-rows-4 text-center items-center bg-yellow-500"
+          : "hidden"
+      }
+      onClick={toggle}
+    >
       <Link className="p-4" to="/"></Link>
-      <Link className="p-4" to="/menu">
-        Menu
+      <Link className="p-4" to="/Work">
+        Work
       </Link>
-      <Link className="p-4" to="/about">
-        About
+      <Link className="p-4" to="/Resume">
+        Resume
       </Link>
-      <Link className="p-4" to="/contact">
-        Contact
+      <Link className="p-4" to="/About">
+        About+Connect
       </Link>
     </div>
   );
