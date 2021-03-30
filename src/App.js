@@ -1,44 +1,52 @@
-import React, {useState, useEffect} from 'react';
 import './App.css';
-import Navbar from './components/shared/Navbar';
-import Footer from './components/shared/Footer';
-import Main from './components/pages/Main'
-import About from './components/pages/About'
-import Work from './components/pages/Work'
-import { Switch, Route } from 'react-router';
-import Dropdown from './components/shared/Dropdown';
-
+import NavBar from './components/shared/NavBar';
+import HomePage from './pages/HomePage';
+import {Switch, Route} from 'react-router-dom';
+import AboutPage from './pages/AboutPage';
+import PortfliosPage from './pages/PortfoliosPage';
+import BlogsPage from './pages/BlogsPage';
+import ContactPage from './pages/ContactPage';
+import { useState } from 'react';
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [navToggle, setNavToggle] = useState(false);
 
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
-
-  useEffect(() => {
-    const hideMenu = () => {
-      if(window.innerWidth > 768 && isOpen){
-        setIsOpen(false)
-      }
-    }
-    window.addEventListener('resize', hideMenu)
-    return () => {
-      window.removeEventListener('resize', hideMenu)
-    }
-  })
+  const navClick = () =>{
+    setNavToggle(!navToggle)
+  }
 
   return (
-    <>
-      <Navbar toogle={toggle}/>
-      <Dropdown isOpen={isOpen} toggle={toggle}/>
-      <Switch>
-        <Route path='/' exact component={Main} />
-        <Route path='/Work' exact component={Work} />
-        <Route path='/About' exact component={About} />
-      </Switch>
-      <Footer />
-    </>
+    <div className="App">
+      <div className={`sidebar ${navToggle ? 'nav-toggle': ''}`}>
+        <NavBar />
+      </div>
+      <div className="nav-btn" onClick={navClick}>
+        <div className="lines-1"></div>
+        <div className="lines-2"></div>
+        <div className="lines-3"></div>
+      </div>
+      <div className="main-content">
+          <div className="content">
+            <Switch>
+              <Route path="/" exact>
+                <HomePage />
+              </Route>
+              <Route path="/about" exact>
+                <AboutPage />
+              </Route>
+              <Route path="/portfolios" exact>
+                <PortfliosPage />
+              </Route>
+              <Route path="/blogs" exact>
+                <BlogsPage />
+              </Route>
+              <Route path="/contact" exact>
+                <ContactPage />
+              </Route>
+            </Switch>
+          </div>
+      </div>
+    </div>
   );
 }
 
