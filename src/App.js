@@ -1,12 +1,15 @@
 import './App.css';
+
 import NavBar from './components/shared/NavBar';
 import HomePage from './pages/HomePage';
-import {Switch, Route} from 'react-router-dom';
 import AboutPage from './pages/AboutPage';
 import PortfliosPage from './pages/PortfoliosPage';
 import BlogsPage from './pages/BlogsPage';
 import ContactPage from './pages/ContactPage';
+
 import { useState } from 'react';
+import { Switch, Route } from 'react-router-dom';
+
 
 function App() {
   const [navToggle, setNavToggle] = useState(false);
