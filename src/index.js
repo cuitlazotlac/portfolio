@@ -7,6 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import './i18n';
 
+
 ReactDOM.render(
   <Suspense fallback={(<div>Loading....</div>)} >
   <React.StrictMode>
