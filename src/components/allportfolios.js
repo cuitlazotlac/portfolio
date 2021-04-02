@@ -75,6 +75,16 @@ const portfolios = [
         icon2: 'Y',
         // image: port4,
         title: 'Vanilla Javascript Website'
+    },
+    {
+        id: 8,
+        category: 'Ton Papa',
+        link1: 'www.youtube.com',
+        link2: 'www.github.com',
+        icon1: 'G',
+        icon2: 'Y',
+        // image: port4,
+        title: 'Vanilla Javascript Website'
     }
 ]
 

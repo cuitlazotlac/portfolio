@@ -43,6 +43,25 @@ function AboutPage() {
                 
             </div>
 
+
+            <Tittle title={'Certification'} span={'Certification'} />
+            <div className="servives-container">
+                {/* <ServicesSection image={design} title={'Web design'}  */}
+                <ServicesSection title={'ITIL V4'} 
+                text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
+                />
+                {/* <ServicesSection image={intelligence} title={'Artificial Intelligence'} */}
+                <ServicesSection title={'PSPO 1'} 
+                text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
+                />
+                {/* <ServicesSection image={gamedev} title={'Game Development'}  */}
+                <ServicesSection title={'PSM1'} 
+                text={'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}
+                />
+
+                
+            </div>
+
         </div>
     )
 }

@@ -5,10 +5,6 @@ import { useTranslation } from "react-i18next";
 function ImageSection() {
     const { t, i18n } = useTranslation();
 
-    function handleClick(lang) {
-      i18n.changeLanguage(lang);
-    }
-
     return (
         <div className="ImageSection">
             <div className="img">
