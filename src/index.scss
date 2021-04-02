@@ -8,6 +8,8 @@
 @import './ressources/styles/portfolios';
 @import './ressources/styles/services';
 @import './ressources/styles/title';
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+
 
 *{
     padding: 0;
@@ -27,7 +29,7 @@ body::-webkit-scrollbar-track{
 
 body{
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Cairo';
     font-size: 1.2rem;
 }
 span{

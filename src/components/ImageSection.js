@@ -1,18 +1,25 @@
 import React from 'react';
 // import about from '../img/about.jpg';
+import { useTranslation } from "react-i18next";
 
 function ImageSection() {
+    const { t, i18n } = useTranslation();
+
+    function handleClick(lang) {
+      i18n.changeLanguage(lang);
+    }
+
     return (
         <div className="ImageSection">
             <div className="img">
                 {/* <img src={about} alt=""/> */}
             </div>
             <div className="about-info">
-                <h4>I am<span> Lorem Ipsum</span></h4>
+                <h4>I am<span><p>{t("Cat1.Text1")}</p></span></h4>
                 <p className="about-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Voluptatum necessitatibus perferendis numquam dolorem cumque facilis.
-                    Desir per po la ta doso vi slone ve?
+                    Desir per po la ta doso vi slone åve?
                 </p>
                 <div className="about-details">
                     <div className="left-section">
