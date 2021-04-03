@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 // import avatar from '../img/avatar.png';
+import avatar from "../../ressources/images/Group1.svg";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -10,11 +11,26 @@ function Navbar() {
     i18n.changeLanguage(lang);
   }
 
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div className="NavBar">
       <nav className="nav">
-        <div className="profile">{/* <img src={avatar} alt=""/> */}</div>
-
+        <div className="profile">
+          <img src={avatar} alt="" />
+        </div>
+        <div className={darkMode ? "dark-mode" : "light-mode"}>
+          <div className="container">
+            <span style={{ color: darkMode ? "grey" : "yellow" }}>☀︎</span>
+            <div className="switch-checkbox">
+              <label className="switch">
+                <input type="checkbox" onChange={() => setDarkMode(!darkMode)} />
+                <span className="slider round"> </span>
+              </label>
+            </div>
+            <span style={{ color: darkMode ? "#c96dfd": "grey"}}>☽</span>
+          </div>
+        </div>
         <ul className="nav-items">
           <li className="nav-item">
             <NavLink to="/" exact activeClassName="active">
