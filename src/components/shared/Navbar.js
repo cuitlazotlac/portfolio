@@ -1,15 +1,28 @@
 import React, { useState } from "react";
-import avatar from "../../ressources/images/hve_favicon.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Badge } from 'reactstrap';
+import { DropdownButton, Dropdown, Badge } from "react-bootstrap";
+import avatar from "../../ressources/images/hve_favicon.svg";
+import react_logo from "../../ressources/images/react.svg";
+import behance from "../../ressources/images/social-media-btn/behance.svg";
+import github from "../../ressources/images/social-media-btn/github.svg";
+import mail from "../../ressources/images/social-media-btn/mail.svg";
+import linkedin from "../../ressources/images/social-media-btn/linkedin.svg";
 
 function Navbar() {
   const { t, i18n } = useTranslation();
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const toggle = () => setDropdownOpen((prevState) => !prevState);
 
   function handleClick(lang) {
     i18n.changeLanguage(lang);
   }
+
+  const [lang_value, setValue] = useState("en");
+  const handleSelect = (e) => {
+    console.log(e);
+    setValue(e);
+  };
 
   const [darkMode, setDarkMode] = useState(false);
 
@@ -31,45 +44,72 @@ function Navbar() {
             </div>
             <span style={{ color: darkMode ? "#c96dfd" : "grey" }}>☽</span>
           </div>
+
+          <div>
+            <DropdownButton
+              alignRight
+              title={lang_value}
+              id="dropdown-menu-align-right"
+              onSelect={handleSelect}
+            >
+              <Dropdown.Item eventKey="EN" onClick={() => handleClick("en")}>
+                {t("NavBar.English")}
+              </Dropdown.Item>
+              <Dropdown.Item eventKey="FR" onClick={() => handleClick("fr")}>
+                {t("NavBar.French")}
+              </Dropdown.Item>
+              <Dropdown.Item eventKey="ES" onClick={() => handleClick("es")}>
+                {t("NavBar.Spanish")}
+              </Dropdown.Item>
+            </DropdownButton>
+          </div>
         </div>
 
         <ul className="nav-items">
           <li className="nav-item">
             <NavLink to="/" exact activeClassName="active">
-              HOME
+              {t("NavBar.Home")}
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/about" exact activeClassName="active">
-              ABOUT
+              {t("NavBar.About")}
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/portfolios" exact activeClassName="active">
-              PORTFOLIOS 
+              {t("NavBar.Portfolios")}{" "}
+              <Badge pill variant="secondary">
+                14
+              </Badge>
             </NavLink>
-            <Badge pill>14</Badge>
           </li>
           <li className="nav-item">
             <NavLink to="/blogs" exact activeClassName="active">
-              BLOGS
+              {t("NavBar.Blogs")}{" "}
+              <Badge pill variant="secondary">
+                14
+              </Badge>
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/contact" exact activeClassName="active">
-              CONTACT
+              {t("NavBar.Contact")}
             </NavLink>
           </li>
-          <li className="nav-item">
-            <button onClick={() => handleClick("en")}>English</button>
-            <button onClick={() => handleClick("fr")}>French</button>
-            <button onClick={() => handleClick("es")}>Spanish</button>
-          </li>
         </ul>
-
         <footer className="footer">
-          <p>{t("Cat1.Text1")}</p>
-          <p>{t("Cat2.Text1")}</p>
+          <div>
+            <img src={linkedin} alt="" />
+            <img src={github} alt="" />
+            <img src={behance} alt="" />
+            <img src={mail} alt="" />
+          </div>
+          <p className="copyright">
+            {" "}
+            {t("NavBar.MadeWith")}
+            <img src={react_logo} alt="" />
+          </p>
         </footer>
       </nav>
     </div>
