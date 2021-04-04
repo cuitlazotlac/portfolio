@@ -27,13 +27,13 @@ body::-webkit-scrollbar-track {
 }
 
 body {
-  color: black;
+  // color: black;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.2rem;
 }
-span {
-  color: #037fff;
-}
+// span {
+//   color: #037fff;
+// }
 
 @media screen and (max-width: 411px) {
   html {

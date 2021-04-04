@@ -30,22 +30,23 @@ function Navbar() {
     <div className="NavBar">
       <nav className="nav">
         <div className="profile">
-          <img src={avatar} alt="" />
-          <div className="nav-options">
-            <span style={{ color: darkMode ? "grey" : "yellow" }}>☀︎</span>
-            <div className="switch-checkbox">
-              <label className="switch">
-                <input
-                  type="checkbox"
-                  onChange={() => setDarkMode(!darkMode)}
-                />
-                <span className="slider round"> </span>
-              </label>
-            </div>
-            <span style={{ color: darkMode ? "#c96dfd" : "grey" }}>☽</span>
-          </div>
+          <img className="avatar" src={avatar} alt="" />
 
-          <div>
+          <div className="light-dark-toggle">
+            <input
+              type="checkbox"
+              id="chk"
+              class="checkbox"
+              onChange={() => setDarkMode(!darkMode)}
+            />
+            <label for="chk" class="label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+          <i class="fas fa-globe-africa"></i>
+          <div className="lang-list">
             <DropdownButton
               alignRight
               title={lang_value}
@@ -64,53 +65,56 @@ function Navbar() {
             </DropdownButton>
           </div>
         </div>
-
-        <ul className="nav-items">
-          <li className="nav-item">
-            <NavLink to="/" exact activeClassName="active">
-              {t("NavBar.Home")}
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/about" exact activeClassName="active">
-              {t("NavBar.About")}
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/portfolios" exact activeClassName="active">
-              {t("NavBar.Portfolios")}{" "}
-              <Badge pill variant="secondary">
-                14
-              </Badge>
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/blogs" exact activeClassName="active">
-              {t("NavBar.Blogs")}{" "}
-              <Badge pill variant="secondary">
-                14
-              </Badge>
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/contact" exact activeClassName="active">
-              {t("NavBar.Contact")}
-            </NavLink>
-          </li>
-        </ul>
-        <footer className="footer">
-          <div>
-            <img src={linkedin} alt="" />
-            <img src={github} alt="" />
-            <img src={behance} alt="" />
-            <img src={mail} alt="" />
-          </div>
-          <p className="copyright">
-            {" "}
-            {t("NavBar.MadeWith")}
-            <img src={react_logo} alt="" />
-          </p>
-        </footer>
+        <div className="nav-items">
+          <ul>
+            <div className="nav-container">
+              <li className="nav-item">
+                <NavLink to="/" exact activeClassName="active">
+                  {t("NavBar.Home")}
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/about" exact activeClassName="active">
+                  {t("NavBar.About")}
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/portfolios" exact activeClassName="active">
+                  {t("NavBar.Portfolios")}{" "}
+                  <Badge pill variant="secondary">
+                    14
+                  </Badge>
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/blogs" exact activeClassName="active">
+                  {t("NavBar.Blogs")}{" "}
+                  <Badge pill variant="secondary">
+                    14
+                  </Badge>
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink to="/contact" exact activeClassName="active">
+                  {t("NavBar.Contact")}
+                </NavLink>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div className="footer-div">
+            <div className="social-btn">
+              <img src={linkedin} alt="linkedin" />
+              <img src={github} alt="github" />
+              <img src={behance} alt="behance" />
+              <img src={mail} alt="mail" />
+            </div>
+            <p className="copyright">
+              {" "}
+              {t("NavBar.MadeWith")}
+              <img className="social-btn" src={react_logo} alt="" />
+            </p>
+        </div>
       </nav>
     </div>
   );
