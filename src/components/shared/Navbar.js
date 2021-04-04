@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-// import avatar from '../img/avatar.png';
-import avatar from "../../ressources/images/Group1.svg";
+import avatar from "../../ressources/images/hve_favicon.svg";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Badge } from 'reactstrap';
 
 function Navbar() {
   const { t, i18n } = useTranslation();
@@ -18,43 +18,46 @@ function Navbar() {
       <nav className="nav">
         <div className="profile">
           <img src={avatar} alt="" />
-        </div>
-        <div className={darkMode ? "dark-mode" : "light-mode"}>
-          <div className="container">
+          <div className="nav-options">
             <span style={{ color: darkMode ? "grey" : "yellow" }}>☀︎</span>
             <div className="switch-checkbox">
               <label className="switch">
-                <input type="checkbox" onChange={() => setDarkMode(!darkMode)} />
+                <input
+                  type="checkbox"
+                  onChange={() => setDarkMode(!darkMode)}
+                />
                 <span className="slider round"> </span>
               </label>
             </div>
-            <span style={{ color: darkMode ? "#c96dfd": "grey"}}>☽</span>
+            <span style={{ color: darkMode ? "#c96dfd" : "grey" }}>☽</span>
           </div>
         </div>
+
         <ul className="nav-items">
           <li className="nav-item">
             <NavLink to="/" exact activeClassName="active">
-              Home
+              HOME
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/about" exact activeClassName="active">
-              About
+              ABOUT
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/portfolios" exact activeClassName="active">
-              Portfolios
+              PORTFOLIOS 
             </NavLink>
+            <Badge pill>14</Badge>
           </li>
           <li className="nav-item">
             <NavLink to="/blogs" exact activeClassName="active">
-              Blogs
+              BLOGS
             </NavLink>
           </li>
           <li className="nav-item">
             <NavLink to="/contact" exact activeClassName="active">
-              Contact
+              CONTACT
             </NavLink>
           </li>
           <li className="nav-item">
