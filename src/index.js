@@ -6,6 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
 import './i18n';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 ReactDOM.render(
