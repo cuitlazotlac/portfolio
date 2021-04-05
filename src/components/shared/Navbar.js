@@ -10,6 +10,11 @@ import mail from "../../ressources/images/social-media-btn/mail.svg";
 import linkedin from "../../ressources/images/social-media-btn/linkedin.svg";
 
 function Navbar() {
+  var linkedin_link = "https://www.youtube.com/";
+  var github_link = "https://www.youtube.com/";
+  var behance_link = "https://www.youtube.com/";
+  var mail_link = "https://www.youtube.com/";
+
   const { t, i18n } = useTranslation();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggle = () => setDropdownOpen((prevState) => !prevState);
@@ -18,7 +23,7 @@ function Navbar() {
     i18n.changeLanguage(lang);
   }
 
-  const [lang_value, setValue] = useState("en");
+  const [lang_value, setValue] = useState(<i class="fas fa-globe-africa"></i>);
   const handleSelect = (e) => {
     console.log(e);
     setValue(e);
@@ -45,21 +50,23 @@ function Navbar() {
               <div class="ball"></div>
             </label>
           </div>
-          <i class="fas fa-globe-africa"></i>
+
           <div className="lang-list">
             <DropdownButton
               alignRight
               title={lang_value}
               id="dropdown-menu-align-right"
               onSelect={handleSelect}
+              variant="Secondary"
+              size="sm"
             >
-              <Dropdown.Item eventKey="EN" onClick={() => handleClick("en")}>
+              <Dropdown.Item eventKey="🇺🇸" onClick={() => handleClick("en")}>
                 {t("NavBar.English")}
               </Dropdown.Item>
-              <Dropdown.Item eventKey="FR" onClick={() => handleClick("fr")}>
+              <Dropdown.Item eventKey="🇫🇷" onClick={() => handleClick("fr")}>
                 {t("NavBar.French")}
               </Dropdown.Item>
-              <Dropdown.Item eventKey="ES" onClick={() => handleClick("es")}>
+              <Dropdown.Item eventKey="🇲🇽" onClick={() => handleClick("es")}>
                 {t("NavBar.Spanish")}
               </Dropdown.Item>
             </DropdownButton>
@@ -103,17 +110,25 @@ function Navbar() {
           </ul>
         </div>
         <div className="footer-div">
-            <div className="social-btn">
+          <div className="social-btn">
+            <a href={linkedin_link} target="_blank">
               <img src={linkedin} alt="linkedin" />
+            </a>
+            <a href={github_link} target="_blank">
               <img src={github} alt="github" />
+            </a>
+            <a href={behance_link} target="_blank">
               <img src={behance} alt="behance" />
+            </a>
+            <a href={mail_link} target="_blank">
               <img src={mail} alt="mail" />
-            </div>
-            <p className="copyright">
-              {" "}
-              {t("NavBar.MadeWith")}
-              <img className="social-btn" src={react_logo} alt="" />
-            </p>
+            </a>
+          </div>
+          <p className="copyright">
+            {" "}
+            {t("NavBar.MadeWith")}
+            <img className="social-btn" src={react_logo} alt="" />
+          </p>
         </div>
       </nav>
     </div>
