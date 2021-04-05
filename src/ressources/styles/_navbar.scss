@@ -20,6 +20,8 @@
       .light-dark-toggle {
         grid-column-start: 2;
         grid-column-end: 3;
+        margin-top: 1.1rem;
+        margin-left: 1rem;
         .checkbox {
           opacity: 0;
           position: absolute;
@@ -59,6 +61,20 @@
       .lang-list {
         grid-column-start: 3;
         grid-column-end: 4;
+        margin-top: 0.01rem;
+        margin-left: 1.1rem;
+        .dropdown-toggle::after{
+          display: none;
+          border-top: none;
+          border-right: none;
+          border-left: none;
+          border-bottom: none;
+        }
+        .btn{
+          background-color: #111111;
+          color: white;
+        }
+
       }
     }
 
@@ -75,7 +91,7 @@
         a {
           text-decoration: none;
           font-size: inherit;
-          // color: black;
+          color: black;
           display: block;
           padding: 0.5rem 0;
           position: relative;
@@ -138,6 +154,5 @@
 }
 
 .active {
-  background-color: black;
-  color: white;
+  background-color: #CECAC9;
 }
