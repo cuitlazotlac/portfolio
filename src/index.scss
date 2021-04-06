@@ -8,6 +8,7 @@
 @import "./ressources/styles/portfolios";
 @import "./ressources/styles/services";
 @import "./ressources/styles/title";
+@import "./ressources/styles/allportfolios";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 
 * {
@@ -27,7 +28,6 @@ body::-webkit-scrollbar-track {
 }
 
 body {
-  // color: black;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.2rem;
 }
