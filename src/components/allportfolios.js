@@ -18,7 +18,8 @@ const portfolios = [
     },
     {
         id: 2,
-        category: 'Python',
+        // category: 'Python',
+        category: <i class="fab fa-react"></i>,
         link1: 'www.youtube.com',
         link2: 'www.github.com',
         icon1: 'G',
@@ -28,7 +29,7 @@ const portfolios = [
     },
     {
         id: 3,
-        category: 'Animation',
+        category: 'JAVASCRIPT',
         link1: 'www.youtube.com',
         link2: 'www.github.com',
         icon1: 'G',
