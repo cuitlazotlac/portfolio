@@ -34,8 +34,20 @@ function HomePage() {
         />
         <h1 className="hero-text">
           Hi, I am
-          <span> Lorem Ipsum.</span>
+          <span> Cuitlaztolac.</span>
         </h1>
+        <p className="h-sub-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          facere, numquam vitae placeat consequatur corrupti officia quibusdam.
+          Blanditiis doloremque nemo ex facilis neque. A sint ipsam earum nemo
+          omnis et.
+        </p>
+        <p className="h-sub-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          facere, numquam vitae placeat consequatur corrupti officia quibusdam.
+          Blanditiis doloremque nemo ex facilis neque. A sint ipsam earum nemo
+          omnis et.
+        </p>
         <p className="h-sub-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
           facere, numquam vitae placeat consequatur corrupti officia quibusdam.
