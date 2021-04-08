@@ -1,5 +1,5 @@
 import React from "react";
-// import about from '../img/about.jpg';
+import profile_picture from '../ressources/images/profile_img.jpg';
 import { useTranslation } from "react-i18next";
 import Typical from "react-typical";
 
@@ -8,7 +8,7 @@ function ImageSection() {
 
   return (
     <div className="ImageSection">
-      <div className="img">{/* <img src={about} alt=""/> */}</div>
+      <div className="img"><img src={profile_picture} alt=""/></div>
       <div className="about-info">
         <h4>
           I am
