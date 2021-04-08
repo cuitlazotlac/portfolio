@@ -10,8 +10,6 @@ import ContactPage from "./pages/ContactPage";
 import { useState } from "react";
 import { Switch, Route } from "react-router-dom";
 
-
-
 function App() {
   const [navToggle, setNavToggle] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
