@@ -3,11 +3,12 @@
 // import blog3 from '../img/blogs/blog3.svg';
 // import blog4 from '../img/blogs/blog4.svg';
 // import blog5 from '../img/blogs/blog5.svg';
+import blog_img from '../ressources/images/Group1.svg';
 
 const blogs = [
     {
         id: 1,
-        // image: blog1,
+        image: blog_img,
         title: 'UI/UX Design Starter with Figma',
         link: 'https://www.facebook.com/',
         date : '21',
@@ -16,7 +17,7 @@ const blogs = [
     },
     {
         id: 2,
-        // image: blog2,
+        image: blog_img,
         title: 'UI/UX Design Starter with Figma',
         link: 'https://www.facebook.com/',
         date : '09',
@@ -25,7 +26,7 @@ const blogs = [
     },
     {
         id: 3,
-        // image: blog3,
+        image: blog_img,
         title: 'UI/UX Design Starter with Figma',
         link: 'https://www.facebook.com/',
         date : '15',
@@ -34,7 +35,7 @@ const blogs = [
     },
     {
         id: 4,
-        // image: blog4,
+        image: blog_img,
         title: 'UI/UX Design Starter with Figma',
         link: 'https://www.facebook.com/',
         date : '04',
@@ -43,7 +44,7 @@ const blogs = [
     },
     {
         id: 5,
-        // image: blog5,
+        image: blog_img,
         title: 'UI/UX Design Starter with Figma',
         link: 'https://www.facebook.com/',
         date : '09',
@@ -52,7 +53,7 @@ const blogs = [
     },
     {
         id: 6,
-        // image: blog5,
+        image: blog_img,
         title: 'UI/UX Design Starter with Figma',
         link: 'https://www.facebook.com/',
         date : '09',
@@ -61,7 +62,7 @@ const blogs = [
     },
     {
         id: 7,
-        // image: blog3,
+        image: blog_img,
         title: 'Test Blogs data1',
         link: 'https://www.facebook.com/',
         date : '09',
@@ -70,7 +71,34 @@ const blogs = [
     },
     {
         id: 8,
-        // image: blog1,
+        image: blog_img,
+        title: 'Test Blogs data2',
+        link: 'https://www.facebook.com/',
+        date : '09',
+        month: 'Sep',
+        year: '2019'
+    },
+    {
+        id: 9,
+        image: blog_img,
+        title: 'UI/UX Design Starter with Figma',
+        link: 'https://www.facebook.com/',
+        date : '09',
+        month: 'Sep',
+        year: '2019'
+    },
+    {
+        id: 10,
+        image: blog_img,
+        title: 'Test Blogs data1',
+        link: 'https://www.facebook.com/',
+        date : '09',
+        month: 'Sep',
+        year: '2019'
+    },
+    {
+        id: 11,
+        image: blog_img,
         title: 'Test Blogs data2',
         link: 'https://www.facebook.com/',
         date : '09',
