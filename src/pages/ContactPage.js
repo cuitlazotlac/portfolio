@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactItem from '../components/ContactItem';
-import Tittle from '../components/Tittle';
+import MainTitle from '../components/shared/MainTitle';
 // import phone from '../img/phone.svg';
 // import email from '../img/emailme.svg';
 // import location from '../img/location.svg';
@@ -9,7 +9,7 @@ function ContactPage() {
     return (
         <div>
             <div className="title">
-                <Tittle title={'About Me'} span={'About Me'} />
+                <MainTitle title={'About Me'} span={'About Me'} />
             </div>
             <div className="ContactPage">
                 <div className="map-sect">

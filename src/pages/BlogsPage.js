@@ -1,12 +1,12 @@
 import React from 'react';
-import Tittle from '../components/Tittle';
+import MainTitle from '../components/shared/MainTitle';
 import allBlogs from '../components/allBlogs';
 
 function BlogsPage() {
     return (
         <div >
             <div className="b-title">
-                <Tittle title={'Case Studies'} span={'Case Studies'} />
+                <MainTitle title={'Case Studies'} span={'Case Studies'} />
             </div>
             <div className="BlogsPage">
                 {
