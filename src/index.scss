@@ -70,6 +70,9 @@ span {
 }
 
 // .dark-mode {
+//   *{
+//     background-color: #1a1919;
+//   }
 //   background-color: #1a1919;
 //   color: #999;
 //   height: 100%;
@@ -77,7 +80,9 @@ span {
 // }
 
 // .light-mode {
-//   background-color: #fff;
+//   *{
+//     background-color: #fff;
+//   }
 //   color: #333;
 //   height: 100%;
 //   transition: background-color 0.25s ease-in-out;

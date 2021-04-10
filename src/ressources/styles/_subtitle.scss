@@ -1,0 +1,18 @@
+.SubTitle{
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 1rem;
+    letter-spacing: 3px;
+    span{
+        position: absolute;
+        color: gray;
+        font-weight: bold;
+        top: -6%;
+        left: 0;
+        font-size: 5.5rem;
+        opacity: 0.10;
+    }
+}
