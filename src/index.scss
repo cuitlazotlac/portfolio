@@ -1,14 +1,20 @@
-@import "./ressources/styles/about";
-@import "./ressources/styles/blogs";
-@import "./ressources/styles/contact";
-@import "./ressources/styles/layout";
-@import "./ressources/styles/typography";
-@import "./ressources/styles/navbar";
-@import "./ressources/styles/skill";
-@import "./ressources/styles/portfolios";
-@import "./ressources/styles/services";
-@import "./ressources/styles/title";
-@import "./ressources/styles/allportfolios";
+@import "./ressources/styles/base/typography";
+
+@import "./ressources/styles/components/about";
+@import "./ressources/styles/components/allportfolios";
+@import "./ressources/styles/components/contact";
+@import "./ressources/styles/components/resume";
+@import "./ressources/styles/components/services";
+@import "./ressources/styles/components/skill";
+@import "./ressources/styles/components/subtitle";
+@import "./ressources/styles/components/title";
+
+@import "./ressources/styles/layout/layout";
+@import "./ressources/styles/layout/navbar";
+
+@import "./ressources/styles/pages/blogs";
+@import "./ressources/styles/pages/portfolios";
+
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 
 * {

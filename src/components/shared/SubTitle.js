@@ -4,7 +4,7 @@ import Typical from "react-typical";
 function SubTitle({ title_1, title_2, title_3,span}) {
 
   return (
-    <div className="Title">
+    <div className="SubTitle">
             {/* <div className="SubTitle"> */}
       <p>
         {/* {title} */}
