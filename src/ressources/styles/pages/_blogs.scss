@@ -19,10 +19,11 @@
     &:hover{
         transform: scale(1.1);
         transform: translate(7px, -7px);
-        border-right: 9px solid black;
-        border-bottom: 9px solid black;
+        // border-right: 9px solid black;
+        // border-bottom: 9px solid black;
         transform-style: preserve-3d;
         transition: all 0.2s ease-in-out;
+        box-shadow: 5px 10px black;
     }
     .blog-content {
       overflow: hidden;
