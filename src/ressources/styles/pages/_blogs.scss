@@ -31,9 +31,9 @@
       img {
         width: 100%;
         transition: all 0.2s ease-in-out;
-        &:hover {
-          transform: scale(1.1);
-        }
+        // &:hover {
+        //   transform: scale(1.1);
+        // }
         padding-bottom: 2rem;
       }
       .blog-link {
