@@ -28,7 +28,6 @@ function AboutPage() {
       <ImageSection />
       <DescriptionSection />
       <SkillsSection />
-
       <button className="btn-resume">Download Cv</button>
       <ResumeAccordion />
 
