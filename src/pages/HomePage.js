@@ -41,10 +41,12 @@ function HomePage() {
           height="100vh"
           // width="40vw"
         />
-        <h1 className="hero-text">
-          Hi, I am
-          <span> Cuitlaztolac.</span>
-        </h1>
+        <MainTitle
+          title_1={t("Cat1.Text1")}
+          title_2={t("Cat2.Text1")}
+          title_3={t("Cat1.Text1")}
+          span={t("Cat1.Text1")}
+        />
         <p className="h-sub-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
           facere, numquam vitae placeat consequatur corrupti officia quibusdam.
@@ -81,12 +83,6 @@ function HomePage() {
           </Link>
         </div>
         <br />
-        {/* <MainTitle
-          title_1={t("Cat1.Text1")}
-          title_2={t("Cat2.Text1")}
-          title_3={t("Cat1.Text1")}
-          span={t("Cat1.Text1")}
-        /> */}
         <div className="contact-sect">
           <a href="/about">
             <ContactItem

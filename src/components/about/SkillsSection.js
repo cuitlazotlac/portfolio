@@ -8,16 +8,17 @@ import runkit_icon from "../../ressources/images/skills-icons/runkit.svg";
 import { useTranslation } from "react-i18next";
 
 function SkillsSection() {
-    const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <>
-      <SubTitle
+      {/* <SubTitle
         title_1={t("Cat1.Text1")}
         title_2={t("Cat1.Text1")}
         title_3={t("Cat1.Text1")}
         span={t("Cat1.Text1")}
-      />
+      /> */}
+      <h1>{t("Cat1.Text1")}</h1>
       <div className="about-details">
         <img src={gatsby_icon} alt="" />
         <img src={runkit_icon} alt="" />
@@ -32,12 +33,8 @@ function SkillsSection() {
         <img src={gatsby_icon} alt="" />
         <img src={runkit_icon} alt="" />
       </div>
-      <SubTitle
-        title_1={t("Cat1.Text1")}
-        title_2={t("Cat1.Text1")}
-        title_3={t("Cat1.Text1")}
-        span={t("Cat1.Text1")}
-      />
+      <br />
+      <h1>{t("Cat1.Text1")}</h1>
       <div className="about-details">
         <img src={gatsby_icon} alt="" />
         <img src={runkit_icon} alt="" />

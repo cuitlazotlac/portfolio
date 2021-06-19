@@ -1,6 +1,6 @@
 import React from 'react';
 import MainTitle from '../components/shared/MainTitle';
-import allBlogs from '../components/allBlogs';
+import allBlogs from '../data/blogs'
 
 function BlogsPage() {
     return (

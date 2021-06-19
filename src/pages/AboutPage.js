@@ -1,4 +1,7 @@
 import { React, ContextAwareToggle } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+
 
 import MainTitle from "../components/shared/MainTitle";
 import ImageSection from "../components/ImageSection";
@@ -28,9 +31,12 @@ function AboutPage() {
       <ImageSection />
       <DescriptionSection />
       <SkillsSection />
-      <button className="btn-resume">Download Cv</button>
       <ResumeAccordion />
-
+      <br/>
+      <button className="btn-resume">
+        <i class="far fa-file"></i>
+        DOWNLOAD RESUME
+      </button>
     </div>
   );
 }
