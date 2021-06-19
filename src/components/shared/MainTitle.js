@@ -6,7 +6,6 @@ function MainTitle({ title_1, title_2, title_3,span}) {
   return (
     <div className="Title">
       <p>
-        {/* {title} */}
         <Typical
           loop={Infinity}
           wrapper="b"
