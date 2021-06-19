@@ -1,13 +1,31 @@
-.exp-tab{
-    background-color: greenyellow;
-    .card{
-      background-color: hotpink;
+.exp-tab {
+  .card {
+    border: 3px solid black;
+  }
+  .card-header {
+    border-bottom: 0px solid white;
+    background-color: #ffff;
+  }
+  .btn-link {
+    color: black;
+    // font-weight: 400px;
+    a {
+      color: black;
     }
-    .card-header{
-      background-color: indianred;
+    a:link {
+      text-decoration: none;
     }
-    .btn-link{
-      color: lightskyblue;
-      font-weight: 400px;
+    a:hover {
+      text-decoration: none;
+      color: black;
     }
   }
+  .xp-title {
+    text-align: left;
+    font-weight: bold;
+  }
+  .xp-desc {
+    background-color: wheat;
+    text-align: left;
+  }
+}

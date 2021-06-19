@@ -2,8 +2,9 @@ import React from 'react';
 import Categories from '../components/Categories';
 import MenuItems from '../components/MenuItems';
 import MainTitle from '../components/shared/MainTitle';
-import portfolios from '../components/allportfolios';
 import { useState } from 'react';
+
+import portfolios from '../data/portfolios';
 
 const allCategories = ['All', ...new Set(portfolios.map(item => item.category))];
 
