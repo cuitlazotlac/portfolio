@@ -1,92 +1,38 @@
-// import port1 from '../img/portImages/maya-1.jpg';
-// import port2 from '../img/portImages/port1.jpg';
-// import port3 from '../img/portImages/port2.jpg';
-// import port4 from '../img/portImages/port3.jpg';
-// import port6 from '../img/portImages/port5.jpg';
-// import port7 from '../img/portImages/port6.jpg';
+// import blog1 from '../img/blogs/blog1.svg';
+// import blog2 from '../img/blogs/blog2.svg';
+// import blog3 from '../img/blogs/blog3.svg';
+// import blog4 from '../img/blogs/blog4.svg';
+// import blog5 from '../img/blogs/blog5.svg';
+import blog_img from '../ressources/images/Group1.svg';
 
 const homeCategories = [
     {
         id: 1,
-        category: 'Animation',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        // image: port1,
-        title: 'Autodesk Maya'
+        image: blog_img,
+        title: 'UI/UX Design Starter with Figma',
+        link: 'https://www.facebook.com/',
+        title : '21',
+        text1: 'Mar',
+        text2: '2020'
     },
     {
         id: 2,
-        // category: 'Python',
-        category: <i class="fab fa-react"></i>,
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        // image: port2,
-        title: 'Python Web Scrapping'
+        image: blog_img,
+        title: 'UI/UX Design Starter with Figma',
+        link: 'https://www.facebook.com/',
+        date : '09',
+        month: 'Dec',
+        year: '2019'
     },
     {
         id: 3,
-        category: 'JAVASCRIPT',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        // image: port3,
-        title: 'Autodesk Maya'
-    },
-    {
-        id: 4,
-        category: 'Javascript',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        // image: port4,
-        title: 'Vanilla Javascript Website'
-    },
-    {
-        id: 5,
-        category: 'React Js',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        // image: port6,
-        title: 'Getting Started With React'
-    },
-    {
-        id: 6,
-        category: 'React Js',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        // image: port7,
-        title: 'Vanilla Javascript Website'
-    },
-    {
-        id: 7,
-        category: 'Test Port',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        // image: port4,
-        title: 'Vanilla Javascript Website'
-    },
-    {
-        id: 8,
-        category: 'Ton Papa',
-        link1: 'www.youtube.com',
-        link2: 'www.github.com',
-        icon1: 'G',
-        icon2: 'Y',
-        // image: port4,
-        title: 'Vanilla Javascript Website'
+        image: blog_img,
+        title: 'UI/UX Design Starter with Figma',
+        link: 'https://www.facebook.com/',
+        date : '15',
+        month: 'Jun',
+        year: '2018'
     }
-]
+];
 
 export default homeCategories;
