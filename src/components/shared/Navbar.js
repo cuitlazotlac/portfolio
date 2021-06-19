@@ -101,11 +101,11 @@ function Navbar() {
                   </Badge>
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink to="/contact" exact activeClassName="active">
                   {t("NavBar.Contact")}
                 </NavLink>
-              </li>
+              </li> */}
             </div>
           </ul>
         </div>
