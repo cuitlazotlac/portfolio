@@ -1,10 +1,12 @@
 import React from "react";
-// import {faFacebook} from '@fortawesome/free-brands-svg-icons';
-// import {faGithub} from '@fortawesome/free-brands-svg-icons';
-// import {faYoutube} from '@fortawesome/free-brands-svg-icons';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from "react-router-dom";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link, NavLink } from "react-router-dom";
 import Particles from "react-particles-js";
+import ContactItem from "../components/ContactItem";
+import img from "../ressources/images/abc.png";
 
 function HomePage() {
   return (
@@ -56,14 +58,46 @@ function HomePage() {
         </p>
         <div className="icons">
           <Link to="test" className="icon-holder">
-            {/* <FontAwesomeIcon icon={faFacebook} className="icon fb" /> */}
+            <FontAwesomeIcon icon={faFacebook} className="icon fb" />
           </Link>
           <Link to="test" className="icon-holder">
-            {/* <FontAwesomeIcon icon={faGithub} className="icon gh" /> */}
+            <FontAwesomeIcon icon={faGithub} className="icon gh" />
           </Link>
           <Link to="test" className="icon-holder">
-            {/* <FontAwesomeIcon icon={faYoutube} className="icon yt"/> */}
+            <FontAwesomeIcon icon={faYoutube} className="icon yt" />
           </Link>
+        </div>{" "}
+        <div className="contact-sect">
+          <ContactItem
+            icon={img}
+            title={"Title."}
+            text1={
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            }
+            text2={
+              " It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            }
+          />
+          <ContactItem
+            icon={img}
+            title={"Title."}
+            text1={
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            }
+            text2={
+              " It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            }
+          />
+          <ContactItem
+            icon={img}
+            title={"Title."}
+            text1={
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            }
+            text2={
+              " It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            }
+          />
         </div>
       </header>
     </div>
