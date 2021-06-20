@@ -8,13 +8,13 @@ import blog_img from '../ressources/images/Group1.svg';
 import { useTranslation } from "react-i18next";
 import i18n from "../i18n";
 
-// const { t, i18n } = useTranslation();
-
 const blogs = [
     {
         id: 1,
         image: blog_img,
-        title: i18n.t("Cat1.Text1"),
+        title: ({titlea, title}) => ({
+            title: i18n.t("Cat1.Text1"),
+        }),
         link: "Test",
         date : '21',
         month: 'Mar',
@@ -23,7 +23,7 @@ const blogs = [
     {
         id: 2,
         image: blog_img,
-        title: 'UI/UX Design Starter with Figma',
+        title: i18n.t("Cat1.Text1"),
         link: 'https://www.facebook.com/',
         date : '09',
         month: 'Dec',
