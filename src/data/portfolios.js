@@ -5,6 +5,8 @@
 // import port6 from '../img/portImages/port5.jpg';
 // import port7 from '../img/portImages/port6.jpg';
 
+import i18n from "../i18n";
+
 const portfolios = [
     {
         id: 1,
@@ -14,7 +16,7 @@ const portfolios = [
         icon1: 'G',
         icon2: 'Y',
         // image: port1,
-        title: 'Autodesk Maya'
+        title: i18n.t("AboutPage.resume-btn"),
     },
     {
         id: 2,
