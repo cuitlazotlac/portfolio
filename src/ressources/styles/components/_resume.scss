@@ -1,31 +1,52 @@
 .exp-tab {
+  img {
+    padding: 1rem;
+    width: 16%;
+  }
   .card {
     border: 3px solid black;
   }
   .card-header {
     border-bottom: 0px solid white;
-    background-color: #ffff;
+    background-color: white;
   }
   .btn-link {
+    display: flex;
+    align-items: center;
+    text-align: left;
     color: black;
-    // font-weight: 400px;
-    a {
-      color: black;
-    }
-    a:link {
+    text-decoration: none;
+    font-weight: 900;
+    :link {
       text-decoration: none;
     }
-    a:hover {
+    :hover {
       text-decoration: none;
       color: black;
     }
   }
-  .xp-title {
-    text-align: left;
+  h5 {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  h6 {
     font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.2;
   }
   .xp-desc {
-    background-color: wheat;
-    text-align: left;
+    margin-left: 2rem;
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      color: yellowgreen;
+    }
+    li {
+      list-style-type: square;
+      color: black;
+      margin-left: 1.5rem;
+    }
   }
 }

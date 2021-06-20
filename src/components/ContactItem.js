@@ -9,7 +9,6 @@ function ContactItem({icon, text1, text2,title}) {
                     <h6>{title}</h6>
                     <p>{text1}</p>
                     <p>{text2}</p>
-                    
                 </div>
             </div>
         </div>
