@@ -34,7 +34,7 @@ function AboutPage() {
       <br/>
       <button className="btn-resume">
         <i className="far fa-file"></i>
-        DOWNLOAD RESUME
+        {t("AboutPage.resume-btn")}
       </button>
       <br/>
       <br/>
