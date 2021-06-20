@@ -31,12 +31,14 @@ function AboutPage() {
       <ImageSection />
       <DescriptionSection />
       <SkillsSection />
-      <ResumeAccordion />
       <br/>
       <button className="btn-resume">
         <i class="far fa-file"></i>
         DOWNLOAD RESUME
       </button>
+      <br/>
+      <br/>
+      <ResumeAccordion />
     </div>
   );
 }
