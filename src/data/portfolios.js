@@ -19,7 +19,7 @@ const portfolios = [
     {
         id: 2,
         // category: 'Python',
-        category: <i class="fab fa-react"></i>,
+        category: <i className="fab fa-react"></i>,
         link1: 'www.youtube.com',
         link2: 'www.github.com',
         icon1: 'G',

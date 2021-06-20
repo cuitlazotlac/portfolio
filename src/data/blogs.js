@@ -5,12 +5,17 @@
 // import blog5 from '../img/blogs/blog5.svg';
 import blog_img from '../ressources/images/Group1.svg';
 
+import { useTranslation } from "react-i18next";
+import i18n from "../i18n";
+
+// const { t, i18n } = useTranslation();
+
 const blogs = [
     {
         id: 1,
         image: blog_img,
-        title: 'UI/UX Design Starter with Figma',
-        link: 'https://www.facebook.com/',
+        title: i18n.t("Cat1.Text1"),
+        link: "Test",
         date : '21',
         month: 'Mar',
         year: '2020'

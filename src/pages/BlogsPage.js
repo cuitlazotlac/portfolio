@@ -1,8 +1,13 @@
 import React from 'react';
 import MainTitle from '../components/shared/MainTitle';
 import allBlogs from '../data/blogs'
+import { useTranslation } from "react-i18next";
+
+import i18n from "../i18n";
 
 function BlogsPage() {
+    const { t, i18n } = useTranslation();
+
     return (
         <div >
             <div className="b-title">

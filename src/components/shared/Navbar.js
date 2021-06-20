@@ -23,7 +23,7 @@ function Navbar() {
     i18n.changeLanguage(lang);
   }
 
-  const [lang_value, setValue] = useState(<i class="fas fa-globe-africa"></i>);
+  const [lang_value, setValue] = useState(<i className="fas fa-globe-africa"></i>);
   const handleSelect = (e) => {
     console.log(e);
     setValue(e);
@@ -41,13 +41,13 @@ function Navbar() {
             <input
               type="checkbox"
               id="chk"
-              class="checkbox"
+              className="checkbox"
               onChange={() => setDarkMode(!darkMode)}
             />
-            <label for="chk" class="label">
-              <i class="fas fa-moon"></i>
-              <i class="fas fa-sun"></i>
-              <div class="ball"></div>
+            <label htmlFor="chk" className="label">
+              <i className="fas fa-moon"></i>
+              <i className="fas fa-sun"></i>
+              <div className="ball"></div>
             </label>
           </div>
 

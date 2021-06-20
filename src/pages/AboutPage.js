@@ -33,7 +33,7 @@ function AboutPage() {
       <SkillsSection />
       <br/>
       <button className="btn-resume">
-        <i class="far fa-file"></i>
+        <i className="far fa-file"></i>
         DOWNLOAD RESUME
       </button>
       <br/>
