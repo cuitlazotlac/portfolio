@@ -11,10 +11,10 @@
         @media screen and (max-width: 1000px){
             transition: all .4s ease-in-out;
             transform: translateX(-100%);
-            width: 30%;
+            // width: 30%;
         }
         @media screen and (max-width: 411px){
-            width: 50%;
+            // width: 50%;
         }
     }
     .nav-toggle{
