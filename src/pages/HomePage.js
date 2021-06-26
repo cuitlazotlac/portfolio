@@ -19,28 +19,6 @@ function HomePage() {
   return (
     <div className="HomePage">
       <header className="hero">
-        <Particles
-          params={{
-            particles: {
-              number: {
-                value: 150,
-              },
-              size: {
-                value: 3,
-              },
-            },
-            interactivity: {
-              events: {
-                onhover: {
-                  enable: true,
-                  mode: "repulse",
-                },
-              },
-            },
-          }}
-          height="100vh"
-          // width="40vw"
-        />
         <MainTitle
           title_1={t("Cat1.Text1")}
           title_2={t("Cat2.Text1")}
