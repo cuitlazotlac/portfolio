@@ -7,10 +7,10 @@ const GlobalStyle = createGlobalStyle`
     --primary-color: #007bff;
     --primary-color-light: #057FFF;
     --secondary-color: #6c757d;
-    --background-dark-color: #10121A;
+    --background-dark-color: #030303;
     --background-dark-grey: #191D2B;
     --border-color: #2e344e;
-    --background-light-color: #F1F1F1;
+    --background-light-color: #F2F2F2;
     --background-light-color-2: rgba(3,127,255,.3);
     --white-color: #FFF;
     --font-light-color: #a4acc4;
@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
     --background-dark-color: #F1F1F1;
     --background-dark-grey: #e4e4e4;
     --border-color: #cbced8;
-    --background-light-color: #F1F1F1;
+    --background-light-color: #F2F2F2;
     --background-light-color-2: rgba(3,127,255,.3);
     --white-color: #151515;
     --font-light-color: #313131;
